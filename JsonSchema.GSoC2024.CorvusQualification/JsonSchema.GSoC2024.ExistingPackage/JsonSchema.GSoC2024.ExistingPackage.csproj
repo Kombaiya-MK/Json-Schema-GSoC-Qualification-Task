@@ -10,7 +10,7 @@
 		<Company>Json Schema</Company>	
 		<PackageId>JsonSchema.Gsoc2024.ExistingPackage</PackageId>
 		<Version>1.0.1</Version>
-		<PackageTags>JsonSchema, Gsoc2024, ExistingPackage</PackageTags>
+		<PackageTags>JsonSchema, Source-Generators</PackageTags>
 		<PackageReleaseNotes>Initial release</PackageReleaseNotes>
 		<RepositoryUrl>https://github.com/Kombaiya-MK/Json_Schema-Incremental-Source-Generator-Task.git</RepositoryUrl>
 	</PropertyGroup>

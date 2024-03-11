@@ -4,17 +4,30 @@ This repository contains steps to achieve the solution for the GSoC 2024 qualifi
 
 ## Tasks
 
-- Implement an incremental source generator in ExistingLibrary to produce a missing attribute.
-- Update ExistingLibrary to generate a NuGet package enabling the usage of ServiceProvider and inclusion of the attribute.
-- Successfully consume the ExistingLibrary NuGet package in UserCode without direct project reference.
+- Implement an incremental source generator in ExistingPackage to produce a missing attribute.
+- Update ExistingPackage to generate a NuGet package enabling the usage of ServiceProvider and inclusion of the attribute.
+- Successfully consume the ExistingPackage NuGet package in UserCode without direct project reference.
 
 ## Accomplishment
 
-- Successfully implemented an incremental source generator in ExistingLibrary to generate the missing attribute.
-- Updated ExistingLibrary to generate a NuGet package enabling the usage of ServiceProvider along with the generated attribute.
-- Successfully consumed the ExistingLibrary NuGet package in UserCode without direct project reference, ensuring modularity and ease of integration.
+- Successfully implemented an incremental source generator in ExistingPackage to generate the missing attribute.
+- Updated ExistingPackage to generate a NuGet package enabling the usage of ServiceProvider along with the generated attribute.
+- Successfully consumed the ExistingPackage NuGet package in UserCode without direct project reference, ensuring modularity and ease of integration.
 
-## 1. Update the ExistingLibrary
+## 1. Generate Missing Attribute using Incremental Source Generators
+
+- Install the required Nuget Packages for Source generator.
+
+- Create an Incremental Source Generator in your ExistingPackage project library using `IIncrementalGenerator`.
+
+- Modify the project reference as below snippet.
+
+```
+<ProjectReference Include="..\JsonSchema.GSoC2024.ExistingLibrary\JsonSchema.GSoC2024.ExistingPackage.csproj"
+			OutputItemType="Analyzer" />
+```
+
+## 2. Update the ExistingPackage
 
 - Please execute the following command to install all the dependencies required for the project.
 

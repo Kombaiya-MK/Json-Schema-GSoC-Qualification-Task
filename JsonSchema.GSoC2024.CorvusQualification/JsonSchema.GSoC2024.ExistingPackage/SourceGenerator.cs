@@ -29,7 +29,7 @@ public class GeneratedAttribute : Attribute
     
 }
 ";
-                ctx.AddSource("GeneratedAttribute", SourceText.From(sourceText, Encoding.UTF8));
+                ctx.AddSource("GeneratedAttribute.g", SourceText.From(sourceText, Encoding.UTF8));
             });
         }
     }
