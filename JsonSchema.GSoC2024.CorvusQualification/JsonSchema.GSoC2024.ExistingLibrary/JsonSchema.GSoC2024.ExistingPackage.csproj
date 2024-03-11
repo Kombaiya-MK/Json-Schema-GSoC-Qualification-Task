@@ -2,16 +2,15 @@
 	<PropertyGroup>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<TargetFramework>netstandard2.0</TargetFramework>
-		<IncludeBuildOutput>false</IncludeBuildOutput>
 		<LangVersion>latest</LangVersion>
 		<EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
-		<Title>JsonSchema.Gsoc2024.ExistingLibrary</Title>
-		<Description> Nuget package which contains the missing attribute </Description>
+		<Title>JsonSchema.Gsoc2024.ExistingPackage</Title>
+		<Description> Nuget package which contains the missing attribute and Service Provider</Description>
 		<Authors>Kombaiya MK</Authors>
 		<Company>Json Schema</Company>	
-		<PackageId>JsonSchema.Gsoc2024.ExistingLibrary</PackageId>
-		<Version>1.0.0</Version>
-		<PackageTags>JsonSchema, Gsoc2024, ExistingLibrary</PackageTags>
+		<PackageId>JsonSchema.Gsoc2024.ExistingPackage</PackageId>
+		<Version>1.0.1</Version>
+		<PackageTags>JsonSchema, Gsoc2024, ExistingPackage</PackageTags>
 		<PackageReleaseNotes>Initial release</PackageReleaseNotes>
 		<RepositoryUrl>https://github.com/Kombaiya-MK/Json_Schema-Incremental-Source-Generator-Task.git</RepositoryUrl>
 	</PropertyGroup>
