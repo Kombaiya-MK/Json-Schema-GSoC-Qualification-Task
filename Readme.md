@@ -16,16 +16,18 @@ This repository contains steps to achieve the solution for the GSoC 2024 qualifi
 
 ## 1. Generate Missing Attribute using Incremental Source Generators
 
-- Install the required Nuget Packages for Source generator.
+- Install the necessary NuGet packages for the source generator.
 
-- Create an Incremental Source Generator in your ExistingPackage project library using `IIncrementalGenerator`.
+- Implement an Incremental Source Generator in your ExistingPackage project library using `IIncrementalGenerator` interface.
 
-- Modify the project reference as below snippet.
+- Update the project reference by specifying `OutputItemType` as Analyzer.
 
 ```
-<ProjectReference Include="..\JsonSchema.GSoC2024.ExistingLibrary\JsonSchema.GSoC2024.ExistingPackage.csproj"
-			OutputItemType="Analyzer" />
+<ProjectReference Include="..\JsonSchema.GSoC2024.ExistingPackage\JsonSchema.GSoC2024.ExistingPackage.csproj"
+			OutputItemType="Analyzer"/>
 ```
+
+Now build the solution, and the missing attribute has been generated through the source generator.
 
 ## 2. Update the ExistingPackage
 
