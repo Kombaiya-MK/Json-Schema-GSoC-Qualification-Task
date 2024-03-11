@@ -16,12 +16,12 @@ namespace JsonSchema.GSoC2024.ExistingLibrary
                 var sourceText = @"using System;
 
 [AttributeUsage(AttributeTargets.Assembly)]
-public class GeneratedAttributeAttribute : Attribute
+public class GeneratedAttribute : Attribute
 {
     public string SchemaPath { get; }
     public string Namespace { get; }
 
-    public GeneratedAttributeAttribute(string schemaPath, string @namespace)
+    public GeneratedAttribute(string schemaPath, string @namespace)
     {
         SchemaPath = schemaPath;
         Namespace = @namespace;
@@ -29,7 +29,7 @@ public class GeneratedAttributeAttribute : Attribute
     
 }
 ";
-                ctx.AddSource("GeneratedAttributeAttribute", SourceText.From(sourceText, Encoding.UTF8));
+                ctx.AddSource("GeneratedAttribute.g", SourceText.From(sourceText, Encoding.UTF8));
             });
         }
     }
