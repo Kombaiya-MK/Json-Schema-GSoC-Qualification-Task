@@ -7,8 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="JsonSchema.Gsoc2024.ExistingPackage" Version="1.0.1" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="JsonSchema.Gsoc2024.ExistingPackage" Version="1.0.1" />
+	</ItemGroup>
 
 </Project>

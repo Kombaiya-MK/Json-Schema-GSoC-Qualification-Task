@@ -1,4 +1,4 @@
-﻿using JsonSchema.GSoC2024.ExistingLibrary;
+﻿using JsonSchema.GSoC2024.ExistingPackage;
 
 namespace JsonSchema.GSoC2024.CorvusQualification;
 

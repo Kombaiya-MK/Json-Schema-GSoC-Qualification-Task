@@ -1,10 +1,8 @@
 ﻿using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.Text;
-using System;
-using System.Collections.Generic;
 using System.Text;
 
-namespace JsonSchema.GSoC2024.ExistingLibrary
+namespace JsonSchema.GSoC2024.ExistingPackage
 {
     [Generator]
     public class SourceGenerator : IIncrementalGenerator
