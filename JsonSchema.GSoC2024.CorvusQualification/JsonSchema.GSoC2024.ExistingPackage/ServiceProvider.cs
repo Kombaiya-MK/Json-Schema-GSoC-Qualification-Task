@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace JsonSchema.GSoC2024.ExistingLibrary;
+namespace JsonSchema.GSoC2024.ExistingPackage;
 
 public class ServiceProvider
 {
