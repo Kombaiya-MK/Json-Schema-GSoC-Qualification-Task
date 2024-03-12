@@ -24,8 +24,21 @@ This repository contains steps to achieve the solution for the GSoC 2024 qualifi
 
 ```
 <ProjectReference Include="..\JsonSchema.GSoC2024.ExistingPackage\JsonSchema.GSoC2024.ExistingPackage.csproj"
-			OutputItemType="Analyzer"/>
+   OutputItemType="Analyzer"/>
 ```
+
+## **Important**
+
+if you've got the below error, try to clean and build your solution.
+
+```
+
+Error Could not find a part of the path 'C:\{ProjectNamespace}\obj\Debug\net6.0\{ProjectNamespace}.GeneratedMSBuildEditorConfig.editorconfig'. {ProjectNamespace} C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\Roslyn\Microsoft.Managed.Core.targets 190
+
+```
+
+If the solutions provided above do not resolve the issue, you can refer to the attached MS Learn link for further assistance. The error is likely caused by a long path. Enabling "long path support" can fix this issue.
+[https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=powershell](https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=powershell)
 
 Now build the solution, and the missing attribute has been generated through the source generator.
 
